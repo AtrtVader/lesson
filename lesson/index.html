@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/cycle_photo.js"></script>
+  <title>Английский язык HTML5</title>
+</head>
+<body>
+<h1 class="header">
+  Upper English
+</h1>
+<hr>
+<p class="left"> Изучить Ангийский язык не так уж и сложно, если знать как правильно учить!</p>
+<p class="right"> Мы поможем Вам освоить данный язык без скуки и нудного заучивания!</p>
+<p class="links">
+  [<a href="about.html">О Школе</a>] &nbsp
+  [<a href="test.html">Тестирование</a>] &nbsp
+  [<a href="information.html">Справочная информация</a>] &nbsp
+  [<a href="price.html">Группы и цены</a>] &nbsp
+  [<a href="sales.html">Акции</a>] &nbsp
+  [<a href="contact.html">Наши контакты</a>]
+</p>
+
+<figure>
+  <canvas id="canvas"></canvas>
+</figure>
+
+<figure>
+  <div class="slideshow">
+    <img src="img/1.jpg" width="200" height="200">
+    <img src="img/2.jpg" width="200" height="200">
+    <img src="img/3.jpg" width="200" height="200">
+    <img src="img/4.jpg" width="200" height="200">
+    <img src="img/5.jpg" width="200" height="200">
+  </div>
+</figure>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.slideshow').cycle({
+      fx: 'fade', speed: 2000, next: '.slideshow',
+      timeout: 0 });
+    });
+</script>
+<script src="waves.js"></script>
+</body>
+</html>
